@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*------------------------------------------ header */
+header{
+    width: 100%;
+    height: 150px;
+    padding: 64px 38px;
+    background-color: #c4c4c4;
+    font-size: 18px;
+}
+header li{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    padding: 8px 10px
+}
+
+header li a{
+    color: #000000;
+    padding: 8px 10px;
+}
+header li::before{
+    content: "";
+    width: 0.5px;
+    height: 0%;
+    background-color: #000000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: 2s;
+}
+
+header li::after{
+    content: "";
+    width: 0.5px;
+    height: 0%;
+    background-color: #000000;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transition: 2s;
+}
+
+header li a::before{
+    content: "";
+    width: 0%;
+    height: 0.5px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 2s;
+}
+header li a::after{
+    content: "";
+    width: 0%;
+    height: 0.5px;
+    background-color: #000000;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: 2s;
+}
+
+ header li a:hover::before, header li a:hover::after{
+    width: 100%;
+}
+header li:hover::before, header li:hover::after{
+    height: 100%;
+}
+
+/*----------------------------------------------- main */
+.baneri {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.baneri img{
+    width: 100%;
+    margin-top: -100px;
+}
+.statiebi{
+    padding: 34px;
+
+}
+article{
+    width: 33.3%;
+    background-color: #ff9988;
+    padding-bottom: 12px;
+    float: left;
+}
+
+.colorori{
+    background-color: #ffc700;
+}
+.colorsami{
+    background-color: #c4c4c4
+}
+
+article .statiaimg{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+article .statiaimg img{
+    width: 100%;
+    margin-top: -70px;
+}
+
+article h2{
+    margin: 12px;
+}
+
+article p{
+    margin: 12px;
+}
+article .link{
+    margin: 12px;
+}
+
+article .link a{
+    padding: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+article .link a::after{
+    content: "...";
+}
+/*-----------------------------------------footer */
+footer{
+    clear: both;
+}
+
+footer p{
+    padding: 34px;
+}
+/*-------------------------------------- statia1 */
+.innerpage{
+    padding: 14px 34px 0px 38px;
+}
+
+.innerpage .goback a{
+    color: rgba(0, 0, 0, 0.5)
+}
+.innerpage .goback a::before{
+    content: "<< ";
+}
+
+.innerpage section{
+    background-color: #ff9988;
+    padding-top: 56px;
+    margin-top: 14px;
+}
+.innerpage section h2{
+    margin: 56px 0px 70px 10px;
+}
+
+.innerpage .innerpageimg{
+    width: 33.33%;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+}
+
+.innerpage .innerpageimg .innerpageimg img{
+    width: 100%;
+}
+.innerpage .innerpagetext{
+    clear: both;
+    padding: 36px 28px 32px 10px;
+}
+
+.innerpage .innerpagecolour2{
+    background-color: #ffc700 ;
+}
+
+.innerpage .innerpagecolour3{
+    background-color: #c4c4c4 ;
+}
